@@ -1,0 +1,143 @@
+/* ========== RESET & BASE ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.5;
+}
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ========== HEADER ========== */
+header {
+  background: #4a90e2;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ========== FORM SECTION ========== */
+#task-form-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.form-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#submit-button {
+  background: #4a90e2;
+  color: #fff;
+}
+#cancel-edit {
+  background: #999;
+  color: #fff;
+}
+.hidden {
+  display: none !important;
+}
+
+/* ========== TASK LIST ========== */
+#task-list-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#task-list {
+  list-style: none;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.task-details {
+  flex: 1;
+}
+.task-details h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+.task-details p {
+  margin-bottom: 0.25rem;
+}
+.task-details .status {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+.task-actions button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-edit {
+  background: #ffb400;
+  color: #fff;
+}
+.btn-delete {
+  background: #d9534f;
+  color: #fff;
+}
+
+#no-tasks-message {
+  text-align: center;
+  color: #555;
+  margin-top: 1rem;
+}
